@@ -25,7 +25,7 @@
 
 
   <!-- Hero -->
-  <header class="campaign-hero">
+  <header class="campaign-hero" style="background-image: var(--hero-gradient), url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Albert_Rieger_Forum_Romanum.jpg'); background-size: auto, cover; background-position: center, center 30%;">
     <span class="hero-eyebrow">Campaign II &mdash; Regnum Aurelia</span>
     <h1>Dream of Dawn</h1>
     <p class="hero-tagline">
@@ -140,6 +140,11 @@
         </div>
 
       </div>
+
+      <figure class="art-panel">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Lucas_van_Valckenborch_-_The_Tower_of_Babel.jpg" alt="A great ancient city under construction">
+        <figcaption>Lucas van Valckenborch, c. 1594 &mdash; Public Domain</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -202,7 +207,7 @@
           <div class="npc-title">Military Forces</div>
           <p>The Legio Aurelia is the empire's professional army, dressed in red and gold. The Praetorians are the Emperor's elite guard — few in number, trained to near-perfection, wearing black with gold. When they walk the streets, the crowd quiets.</p>
         </div>
-        <div class="npc-card">
+        <div class="npc-card" id="faction-aerarium">
           <h4>The Aerarium</h4>
           <div class="npc-title">Research &amp; Artifact Institution</div>
           <p>Three divisions: archaeologists who excavate, researchers and censors who study and classify, and archivists who store. The Censors decide what the government knows. Several of the party members have complicated histories here.</p>
@@ -212,22 +217,27 @@
           <div class="npc-title">Priesthood of the Old Ruins</div>
           <p>They maintain the sanctuaries and shrines of Aurastis. They control which ruins can be excavated or studied. Their word carries enormous weight among the faithful — and their small military enforces it among everyone else.</p>
         </div>
-        <div class="npc-card">
+        <div class="npc-card" id="faction-blacktide">
           <h4>The Black Tide</h4>
           <div class="npc-title">Smuggling Gang</div>
-          <p>Founded by Captain Veynar "The Leviathan" and his former fishing crew after the Dusk War left them with nothing. Now ~1000 members strong. Recognized by kraken tattoos. Luana has a complicated relationship with them.</p>
+          <p>Founded by Captain Veynar "The Leviathan" and his former fishing crew after the Dusk War left them with nothing. Now ~1000 members strong. Recognized by kraken tattoos. <a class="xref" href="#char-luana">Luana</a> has a complicated relationship with them.</p>
         </div>
         <div class="npc-card">
           <h4>The Azure Bloom</h4>
           <div class="npc-title">Spellscarred Collective</div>
           <p>Spellscarred individuals who have retreated into the Undercity, worshipping spelltouched relics and believing the Spellplague heralds a new age. Until recently, not a threat. That is changing.</p>
         </div>
-        <div class="npc-card">
+        <div class="npc-card" id="faction-veylran">
           <h4>The Veylran Order</h4>
           <div class="npc-title">Ancient Scholarly Order</div>
-          <p>The organization that rebuilt civilization from the ruins of the Feralin age. Scholars and warriors dedicated to preserving imperial knowledge. Arthen serves as their guardian — or something that was once Arthen.</p>
+          <p>The organization that rebuilt civilization from the ruins of the Feralin age. Scholars and warriors dedicated to preserving imperial knowledge. <a class="xref" href="#fig-arthen">Arthen</a> serves as their guardian — or something that was once Arthen.</p>
         </div>
       </div>
+
+      <figure class="art-panel">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Giovanni_Paolo_Pannini_Forum_in_Rom.jpg" alt="The grand forum of an ancient imperial city">
+        <figcaption>Giovanni Paolo Pannini, 18th c. &mdash; Public Domain</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -247,7 +257,7 @@
       <div class="grid-auto">
 
         <!-- Averine -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-averine">
           <div class="char-header">
             <h3>Averine Lume</h3>
             <span class="char-role">Kalashtar Monk &bull; 28 &bull; Astral Self: Corrupted</span>
@@ -282,7 +292,7 @@
                 sarcastic and calm. He is neither.
               </p>
               <p>
-                His eldest brother, Varon Rhun, is one of the most celebrated figures in Regnum
+                His eldest brother, <a class="xref" href="#fig-varon">Varon Rhun</a>, is one of the most celebrated figures in Regnum
                 Aurelia. Averine has not spoken to him since Dorienne disappeared.
               </p>
             </div>
@@ -290,7 +300,7 @@
         </div>
 
         <!-- Axia -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-axia">
           <div class="char-header">
             <h3>Axia Deimus</h3>
             <span class="char-role">Spellscarred Warlock &bull; Archaeologist &bull; Overseer of Site C42</span>
@@ -320,7 +330,7 @@
               </p>
               <p>
                 Axia's father went looking for what the scroll described and never came back.
-                She funded her mother's care by selling artifacts to Luana on the black market.
+                She funded her mother's care by selling artifacts to <a class="xref" href="#char-luana">Luana</a> on the black market.
                 Then the Spellstorm hit the Aerarium — a pulse of raw magic, blood on ancient
                 parchment — and Axia woke up on the floor knowing things she hadn't learned.
               </p>
@@ -339,7 +349,7 @@
         </div>
 
         <!-- Evander -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-evander">
           <div class="char-header">
             <h3>Evander Aschenwald</h3>
             <span class="char-role">Spellscarred &bull; House Aschenwald &bull; Planar Druid</span>
@@ -366,7 +376,7 @@
               </p>
               <p>
                 His younger brother Emory graduated early with top marks. Evander retook
-                several classes, scraped by with help from his shy, brilliant roommate Lucas Zabell,
+                several classes, scraped by with help from his shy, brilliant roommate <a class="xref" href="#fig-lucas">Lucas Zabell</a>,
                 and generally survived on hard work, some luck, and a non-zero amount of cheating.
               </p>
               <p>
@@ -392,7 +402,7 @@
         </div>
 
         <!-- Luana -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-luana">
           <div class="char-header">
             <h3>Luana Rilynth</h3>
             <span class="char-role">"Lilac" &bull; Half-Drow Artificer &bull; Black Tide Consultant</span>
@@ -435,7 +445,7 @@
                 symptoms from her previous medication — a problem she solved by testing substances
                 until she found combinations that worked. Some of them became habits.
                 She funded everything through artifact dealing, and when the money ran out,
-                through the Black Tide smuggling network.
+                through the <a class="xref" href="#faction-blacktide">Black Tide</a> smuggling network.
               </p>
               <p>
                 She paid her debts. She kept the contacts. She is currently a "consultant" —
@@ -461,31 +471,31 @@
 
       <div class="npc-grid">
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-varon">
           <h4>Varon Rhun</h4>
           <div class="npc-title">Averine's Brother &bull; Mithril-rank Adventurer &bull; Statesman of Syrrakos</div>
           <p>
             One of only a handful of Mithril-rank adventurers in history. Negotiated peace
             between outlaw bands, broke demonic influence over a monastery, outsmarted an
             aberrant hydra. Now he runs a rebuilt city and is respected by everyone. When Dorienne
-            "died," he arrived too late to confirm anything. When Averine disappeared,
+            "died," he arrived too late to confirm anything. When <a class="xref" href="#char-averine">Averine</a> disappeared,
             he interpreted it as hatred. He carries enormous private guilt.
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-dorienne">
           <h4>Dorienne Lume</h4>
           <div class="npc-title">Averine's Sister &bull; Scholar &bull; Missing, Not Dead</div>
           <p>
             Brilliant researcher with a near-perfect memory who raised Averine with warmth and
             patience. Specialized in connecting disparate fields: astral cartography, ki theory,
-            linguistics, early demonology. She was monitoring Averine's corruption — quietly, for
+            linguistics, early demonology. She was monitoring <a class="xref" href="#char-averine">Averine</a>'s corruption — quietly, for
             years. Her research became "too valuable." She was taken by a faction for purposes
             beyond ethical inquiry. Her body was never shown because there is no body.
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-arthen">
           <h4>Arthen</h4>
           <div class="npc-title">The Spear of Dawn &bull; Guardian of Reazan</div>
           <p>
@@ -496,7 +506,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-primals">
           <h4>The Primals &amp; the Feralin</h4>
           <div class="npc-title">Transmuted Nobles &bull; Corrupted God-Figures</div>
           <p>
@@ -507,7 +517,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-arenesius">
           <h4>Emperor Arenesius</h4>
           <div class="npc-title">Emperor of Regnum Aurelia &bull; High Priest</div>
           <p>
@@ -517,12 +527,12 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="fig-lucas">
           <h4>Lucas Zabell</h4>
           <div class="npc-title">Scholar &bull; Evander's Roommate &bull; Emotionally Unresolved</div>
           <p>
             Attended school on scholarship, innately gifted, now one of the most eligible bachelors
-            in academics. Spent years performing "research rituals" on Evander involving runic
+            in academics. Spent years performing "research rituals" on <a class="xref" href="#char-evander">Evander</a> involving runic
             tattoos and smelling salts. Believed his intentions were obvious. They were not.
             Currently very successful and completely moved on, probably.
           </p>
@@ -546,9 +556,9 @@
         <div>
           <p style="color: var(--text-muted); font-size: 0.93rem; margin-bottom: 1.25rem;">
             Four people arrive in Aurastis, the Golden Crown, from different directions.
-            Averine, fleeing grief and a demonic corruption he doesn't understand. Axia, pursuing
-            what the scroll in her mind is leading her toward. Evander, looking for a way back to
-            something he lost. Luana, managing debts, dealing artifacts, and slowly running out of time.
+            <a class="xref" href="#char-averine">Averine</a>, fleeing grief and a demonic corruption he doesn't understand. <a class="xref" href="#char-axia">Axia</a>, pursuing
+            what the scroll in her mind is leading her toward. <a class="xref" href="#char-evander">Evander</a>, looking for a way back to
+            something he lost. <a class="xref" href="#char-luana">Luana</a>, managing debts, dealing artifacts, and slowly running out of time.
           </p>
           <p style="color: var(--text-muted); font-size: 0.93rem; margin-bottom: 1.25rem;">
             Site C42, a ruin at the edge of Aerarium authority, becomes a point of intersection.
@@ -558,7 +568,7 @@
           <p style="color: var(--text-muted); font-size: 0.93rem;">
             The Spellplague is not fully understood. The Azure Bloom grows bolder.
             Ancient machinery sits beneath the city, waiting to be understood — or activated.
-            And somewhere, a faction that takes scholars who know too much has Dorienne Lume.
+            And somewhere, a faction that takes scholars who know too much has <a class="xref" href="#fig-dorienne">Dorienne Lume</a>.
           </p>
         </div>
 

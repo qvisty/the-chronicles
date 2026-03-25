@@ -25,7 +25,7 @@
 
 
   <!-- Hero -->
-  <header class="campaign-hero">
+  <header class="campaign-hero" style="background-image: var(--hero-gradient), url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Jan_Brueghel_the_Elder_-_Das_brennende_Troja.JPG'); background-size: auto, cover; background-position: center, center 50%;">
     <span class="hero-eyebrow">Campaign I &mdash; The War of False Emperors</span>
     <h1>Chains of the Ancients</h1>
     <p class="hero-tagline">
@@ -120,8 +120,8 @@
             while the Emperor's Irons eliminate dissent at home.
           </p>
           <div class="faction-members">
-            <strong>Notable figures:</strong> Emperor Sauntes Myridon &bull;
-            General Thavis D'Vaelan &bull; Maxori "Maxi" Stillbrook &bull; Qiran
+            <strong>Notable figures:</strong> <a href="#npc-sauntes">Emperor Sauntes Myridon</a> &bull;
+            <a href="#npc-thavis">General Thavis D'Vaelan</a> &bull; <a href="#npc-maxi">Maxori "Maxi" Stillbrook</a> &bull; <a href="#npc-qiran">Qiran</a>
           </div>
         </div>
 
@@ -130,13 +130,13 @@
           <div class="faction-side">The Defender</div>
           <p>
             Loyal to what remains of the old Empire, the Stormwatch Duchy holds Isandor
-            against overwhelming odds. Led by the legendary General Belldam Bhaston —
-            whose name alone is a battlecry — and Duke Orvil Rekrihk, who would
+            against overwhelming odds. Led by the legendary <a class="xref" href="#npc-bhaston">General Belldam Bhaston</a> —
+            whose name alone is a battlecry — and <a class="xref" href="#npc-orvil">Duke Orvil Rekrihk</a>, who would
             sooner die as a soldier than surrender as a lord.
           </p>
           <div class="faction-members">
-            <strong>Notable figures:</strong> Duke Orvil Rekrihk &bull;
-            General Belldam Bhaston &bull; The Wavebreakers &bull; The Bloodsworn (decimated)
+            <strong>Notable figures:</strong> <a href="#npc-orvil">Duke Orvil Rekrihk</a> &bull;
+            <a href="#npc-bhaston">General Belldam Bhaston</a> &bull; The Wavebreakers &bull; The Bloodsworn (decimated)
           </div>
         </div>
 
@@ -195,7 +195,7 @@
       <div class="grid-auto">
 
         <!-- Aelthar -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-aelthar">
           <div class="char-header">
             <h3>Aelthar Doryu</h3>
             <span class="char-role">Dragonmarked Summoner &bull; Follower of Shar</span>
@@ -234,7 +234,7 @@
         </div>
 
         <!-- Thalia -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-thalia">
           <div class="char-header">
             <h3>Thalia Elitzi</h3>
             <span class="char-role">Pallid Elf Cleric of Helm &bull; High Warden</span>
@@ -277,7 +277,7 @@
         </div>
 
         <!-- Alexei -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-alexei">
           <div class="char-header">
             <h3>Alexei Rustborn</h3>
             <span class="char-role">"The White Fox" &bull; Wood Elf Rogue &bull; Former Criminal</span>
@@ -317,7 +317,7 @@
         </div>
 
         <!-- Arani -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-arani">
           <div class="char-header">
             <h3>Arani</h3>
             <span class="char-role">Celestial &bull; Sword of Zariel &bull; Founder of the Order of the Seraph</span>
@@ -356,7 +356,7 @@
         </div>
 
         <!-- Mika -->
-        <div class="character-card char-card">
+        <div class="character-card char-card" id="char-mika">
           <div class="char-header">
             <h3>Mika Ironwall Haldovons-dottir</h3>
             <span class="char-role">Dwarf &bull; Crimson Cloud</span>
@@ -376,7 +376,7 @@
 
 
   <!-- Key NPCs -->
-  <section>
+  <section id="notable-figures">
     <div class="container">
       <div class="section-header">
         <span class="label">Allied &amp; Opposed</span>
@@ -386,7 +386,7 @@
 
       <div class="npc-grid">
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-sauntes">
           <h4>Emperor Sauntes Myridon</h4>
           <div class="npc-title">Leader of the Myridon Dynasty</div>
           <p>
@@ -397,7 +397,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-thavis">
           <h4>General Thavis D'Vaelan</h4>
           <div class="npc-title">Myridon's Field Commander</div>
           <p>
@@ -407,7 +407,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-maxi">
           <h4>Maxori "Maxi" Stillbrook</h4>
           <div class="npc-title">Court Mage &bull; Suspected Diabolist</div>
           <p>
@@ -417,7 +417,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-qiran">
           <h4>Qiran</h4>
           <div class="npc-title">Angel of the Mist &bull; Reluctant Ally</div>
           <p>
@@ -427,7 +427,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-bhaston">
           <h4>General Belldam Bhaston</h4>
           <div class="npc-title">Defender of Isandor &bull; Legend</div>
           <p>
@@ -437,7 +437,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-orvil">
           <h4>Duke Orvil Rekrihk</h4>
           <div class="npc-title">Duke of Stormwatch &bull; Target</div>
           <p>
@@ -447,9 +447,9 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-rehael">
           <h4>Rehael</h4>
-          <div class="npc-title">Captured Scholar &bull; Connected to Arani</div>
+          <div class="npc-title">Captured Scholar &bull; Connected to <a class="xref" href="#char-arani">Arani</a></div>
           <p>
             Found in a crypt beneath Isandor, where he had been captured while
             researching the locations of the Crimson Cloud's companions. His calm voice
@@ -457,7 +457,7 @@
           </p>
         </div>
 
-        <div class="npc-card">
+        <div class="npc-card" id="npc-stonewardens">
           <h4>The Stonewardens</h4>
           <div class="npc-title">Secret Order &bull; Extraplanar Guardians</div>
           <p>
@@ -485,20 +485,20 @@
         <div>
           <p style="color: var(--text-muted); font-size: 0.93rem;">
             The Crimson Cloud is given a special mission during the main Myridon assault on Isandor:
-            kill Duke Orvil Rekrihk. Not just to end his command, but to break the spirit of
+            kill <a class="xref" href="#npc-orvil">Duke Orvil Rekrihk</a>. Not just to end his command, but to break the spirit of
             Stormwatch's resistance before it can outlast the siege.
           </p>
           <p style="color: var(--text-muted); font-size: 0.93rem;">
-            They enter the city through the sewers — guided by Qiran and aided by Askavar, a
+            They enter the city through the sewers — guided by <a class="xref" href="#npc-qiran">Qiran</a> and aided by Askavar, a
             fire giant who has chosen an unlikely allegiance. The city above is chaos; below,
             there are older things.
           </p>
           <p style="color: var(--text-muted); font-size: 0.93rem;">
-            A secret crypt. Devils. The Stonewardens. A captive named Rehael. And a psychic
+            A secret crypt. Devils. <a class="xref" href="#npc-stonewardens">The Stonewardens</a>. A captive named <a class="xref" href="#npc-rehael">Rehael</a>. And a psychic
             attack — the Madness of Tharizdun — that strikes as they approach the High Hall.
           </p>
           <p style="color: var(--text-muted); font-size: 0.93rem;">
-            General Belldam Bhaston waits at the gates of the High Hall. The mission has
+            <a class="xref" href="#npc-bhaston">General Belldam Bhaston</a> waits at the gates of the High Hall. The mission has
             not gone as planned. Very little about this war has.
           </p>
         </div>
@@ -513,13 +513,18 @@
             <h3>The War's End</h3>
             <p style="margin-top: 0.4rem;">
               The conflict ends. A new Emperor, Metilles — neither Myridon nor old Ridia —
-              is crowned in the Temple of the Everwatch in Myria. Thalia places the
+              is crowned in the Temple of the Everwatch in Myria. <a class="xref" href="#char-thalia">Thalia</a> places the
               Crown of Reforging on his brow. The bells ring slow and steady.
               The Empire does not feel broken. It feels whole. For the first time.
             </p>
           </div>
         </div>
       </div>
+
+      <figure class="art-panel">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mongols_at_the_walls_of_Vladimir_1238_Vassily_Maximov.jpg" alt="Army at the walls of a besieged city">
+        <figcaption>Vassily Maximov, 1870s &mdash; Public Domain</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -648,7 +653,7 @@
                 She wore the white mask. She earned a name: The Deathwalker.
               </p>
               <p>
-                On a morning with mist curling over the hills near Mardahn, she found Arani
+                On a morning with mist curling over the hills near Mardahn, she found <a class="xref" href="#char-arani">Arani</a>
                 running a final test with her initiates — and a monster that had been tampered
                 with. Alexei appeared on a ridge with a gun still smoking in her hand.
               </p>
