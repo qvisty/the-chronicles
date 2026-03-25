@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Chronicles</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Index-specific overrides */
+    body.hub .hero {
+      min-height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .hub-title {
+      font-size: clamp(2.8rem, 8vw, 6.5rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ddd4bb;
+      margin-bottom: 0.5rem;
+    }
+
+    .hub-divider {
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #6a7090, transparent);
+      margin: 1.25rem auto;
+    }
+
+    .hub-subtitle {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: #8a8070;
+      margin-bottom: 3.5rem;
+    }
+
+    .campaigns-wrapper {
+      width: 100%;
+      max-width: 860px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .campaign-card {
+      position: relative;
+      display: block;
+      background: #14141e;
+      border: 1px solid #2a2a38;
+      border-radius: 6px;
+      padding: 2.5rem;
+      text-align: left;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.2s;
+    }
+
+    .campaign-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .campaign-card:hover {
+      transform: translateY(-3px);
+      text-decoration: none;
+    }
+
+    .campaign-card:hover::after { opacity: 1; }
+
+    .campaign-card.c-chains {
+      border-top: 2px solid #9b2626;
+    }
+    .campaign-card.c-chains::after {
+      background: radial-gradient(ellipse at 30% 0%, rgba(155,38,38,0.1) 0%, transparent 65%);
+    }
+    .campaign-card.c-chains:hover { border-color: #9b2626; }
+
+    .campaign-card.c-dawn {
+      border-top: 2px solid #c9a227;
+    }
+    .campaign-card.c-dawn::after {
+      background: radial-gradient(ellipse at 70% 0%, rgba(201,162,39,0.09) 0%, transparent 65%);
+    }
+    .campaign-card.c-dawn:hover { border-color: #c9a227; }
+
+    .card-tag {
+      font-size: 0.67rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 0.9rem;
+      display: block;
+      position: relative;
+    }
+
+    .c-chains .card-tag { color: #9b2626; }
+    .c-dawn .card-tag { color: #c9a227; }
+
+    .campaign-card h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      color: #ddd4bb;
+      margin-bottom: 0.6rem;
+      position: relative;
+      line-height: 1.2;
+    }
+
+    .card-tagline {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 0.93rem;
+      color: #8a8070;
+      margin-bottom: 1.25rem;
+      line-height: 1.55;
+      position: relative;
+    }
+
+    .card-details {
+      font-size: 0.83rem;
+      color: #6a6458;
+      margin-bottom: 1.75rem;
+      line-height: 1.7;
+      position: relative;
+    }
+
+    .card-cta {
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .c-chains .card-cta { color: #c43c3c; }
+    .c-dawn .card-cta { color: #e8bc30; }
+
+    @media (max-width: 640px) {
+      .campaigns-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="hub">
+
+  <div class="hero">
+    <span class="hero-eyebrow">A Collection of Campaigns</span>
+
+    <h1 class="hub-title">The Chronicles</h1>
+
+    <div class="hub-divider"></div>
+
+    <p class="hub-subtitle">Two worlds. Two stories. Forged at the table.</p>
+
+    <div class="campaigns-wrapper">
+
+      <a class="campaign-card c-chains" href="chains.html">
+        <span class="card-tag">Campaign I</span>
+        <h2>Chains of the Ancients</h2>
+        <p class="card-tagline">
+          A continent fractured. An empire's ghost.<br>
+          A war that will decide everything.
+        </p>
+        <p class="card-details">
+          The Ridian Empire has fallen. In its wake, three powers rise to claim what remains.
+          A party of soldiers, criminals, and celestials must navigate the siege of Isandor —
+          and a darkness older than the war itself.
+        </p>
+        <span class="card-cta">Enter &rarr;</span>
+      </a>
+
+      <a class="campaign-card c-dawn" href="dawn.html">
+        <span class="card-tag">Campaign II</span>
+        <h2>Dream of Dawn</h2>
+        <p class="card-tagline">
+          An empire in myth. A brother in shadow.<br>
+          A truth buried in light.
+        </p>
+        <p class="card-details">
+          In the golden city of Aurastis, the history of Regnum Aurelia is written in marble
+          and myth. But something stirs beneath the surface — in ancient scrolls, in spellscars,
+          and in the space between what the empire teaches and what actually happened.
+        </p>
+        <span class="card-cta">Enter &rarr;</span>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>The Chronicles &mdash; a collection of tabletop stories</p>
+  </footer>
+
+</body>
+</html>
